@@ -6,6 +6,17 @@ public class UpdateTransaction {
     private int pricePerItem;
     private String unit;
     private int quantity;
+
+    public UpdateTransaction(int id, String name, int pricePerItem, String unit, int quantity, int totalPrice, String typeOfTransaction) {
+        this.id = id;
+        this.name = name;
+        this.pricePerItem = pricePerItem;
+        this.unit = unit;
+        this.quantity = quantity;
+        this.totalPrice = totalPrice;
+        this.typeOfTransaction = typeOfTransaction;
+    }
+
     private int totalPrice;
     private String typeOfTransaction;
 

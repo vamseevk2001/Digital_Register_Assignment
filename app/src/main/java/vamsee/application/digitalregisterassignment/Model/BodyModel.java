@@ -10,6 +10,17 @@ public class BodyModel {
     private int totalPrice;
     private String typeOfTransaction;
 
+    public BodyModel(String date, String time, String name, int pricePerItem, String unit, int quantity, int totalPrice, String typeOfTransaction) {
+        this.date = date;
+        this.time = time;
+        this.name = name;
+        this.pricePerItem = pricePerItem;
+        this.unit = unit;
+        this.quantity = quantity;
+        this.totalPrice = totalPrice;
+        this.typeOfTransaction = typeOfTransaction;
+    }
+
     public String getDate() {
         return date;
     }
